@@ -2,13 +2,13 @@
   &-1
     animation: float1 3.5s ease-in-out infinite alternate
     position: absolute
-    top: 40%
-    right: 50%
+    top: 15%
+    right: 20%
   &-2
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 51%
-    right: 30%
+    top: 85%
+    right: 34%
 
 
 @keyframes float1
@@ -17,3 +17,74 @@
 
   100%
     transform: translateY(0px)
+
+.caja
+      
+  &--blanca
+    background-color: $white
+    &--borde
+      background-color: $white
+      border: solid 4px $color-primario
+      border-radius: 20px
+
+  &--gris
+    background-color: $color-sistema-h
+
+  &--azul
+    background-color: $color-sistema-e
+
+  &.color-primario
+    background-color: $color-primario
+    *
+      color: textColor($color-primario)
+    &--borde
+      border-radius: 20px
+      background-color: lighten($color-primario, 55%)
+      color: textColor(lighten($color-primario, 50%))
+      
+  &.color-primario-b
+    border-radius: 20px
+    background-color: #EDF5FF
+    
+
+  &.color-secundario
+    background-color: $color-secundario
+    *
+      color: textColor($color-secundario)
+    &--borde
+      background-color: lighten($color-secundario, 50%)
+      color: textColor(lighten($color-secundario, 50%))
+      border: solid 4px $color-secundario
+  &.color-acento-contenido
+    background-color: lighten($color-acento-contenido, 10%)
+    *
+      color: textColor($color-acento-contenido)
+    &--borde
+      background-color: lighten($color-acento-contenido, 50%)
+      color: textColor(lighten($color-acento-contenido, 50%))
+      border: solid 4px $color-acento-contenido
+
+  &.color-acento-contenido-b
+    background-color: lighten($color-acento-contenido, 20%)
+    *
+      color: textColor($color-acento-contenido)
+    &--borde
+      background-color: lighten($color-acento-contenido, 50%)
+      color: textColor(lighten($color-acento-contenido, 50%))
+      border: solid 4px $color-acento-contenido
+  &.color-acento-botones
+    background-color: $color-acento-botones
+    *
+      color: textColor($color-acento-botones)
+    &--borde
+      background-color: lighten($color-acento-botones, 50%)
+      color: textColor(lighten($color-acento-botones, 50%))
+      border: solid 4px $color-acento-botones
+
+.BGIMG01
+  
+  background-image: url("../assets/curso/fondos/img1.png")
+  background-size: cover 
+  background-repeat: no-repeat
+  background-position: center
+

@@ -1,7 +1,8 @@
 export default {
   global: {
-    componenteFormativo: 'NOMBRE DEL COMPONENTE FORMATIVO',
-    descripcionCurso: 'BREVE DESCRIPCIÓN',
+    componenteFormativo: 'Base de datos',
+    descripcionCurso:
+      'Los datos están en constante evolución y transformación en todo el mundo. Ha introducido nuevos mecanismos de mejora para todos los sistemas, también ha hecho que su operación sea más desafiante.  El registro, la supervisión y el almacenamiento de datos precisos ayuda a abordar de una manera más eficaz estos desafíos y necesidades que contemplan los sistemas.',
     imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.svg'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
@@ -25,19 +26,25 @@ export default {
       {
         nombreRuta: 'introduccion',
         icono: 'fas fa-info-circle',
-        titulo: 'Introducción',
+        titulo: 'Introducción a las bases de datos',
         desarrolloContenidos: true,
       },
       {
         nombreRuta: 'tema1',
         numero: '1',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Evolución de las bases de datos',
         desarrolloContenidos: true,
         subMenu: [
           {
-            numero: '1.1',
-            titulo: 'Titulo de segundo nivel',
-            hash: 't_1_1',
+            numero: '1.2',
+            titulo: '1.2 Tipos de bases de datos',
+            hash: 't_1_2',
+          },
+          {
+            numero: '1.3',
+            titulo:
+              '1.3. Herramientas de software más conocidas para bases de datos',
+            hash: 't_1_3',
           },
         ],
       },
@@ -45,13 +52,80 @@ export default {
       {
         nombreRuta: 'tema2',
         numero: '2',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Fases del proceso de desarrollo de bases de datos',
         desarrolloContenidos: true,
       },
       {
         nombreRuta: 'tema3',
         numero: '3',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Entidades, relaciones y atributos',
+        desarrolloContenidos: true,
+      },
+      {
+        nombreRuta: 'tema4',
+        numero: '4',
+        titulo: 'Modelo ER en base de datos',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '4.1',
+            titulo: '4.1. Entidad',
+            hash: 't_4_1',
+          },
+          {
+            numero: '4.2',
+            titulo: '4.2. Tipo de relación y conjunto de relaciones',
+            hash: 't_4_2',
+          },
+        ],
+      },
+      {
+        nombreRuta: 'tema5',
+        numero: '5',
+        titulo: 'Procedimientos más importantes en bases de datos',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '5.1',
+            titulo: '5.1. Índice de base de datos',
+            hash: 't_5_1',
+          },
+          {
+            numero: '5.2',
+            titulo: '5.2. Vistas en base de datos',
+            hash: 't_5_2',
+          },
+          {
+            numero: '5.3',
+            titulo: '5.3. Reportes o informes en bases de datos',
+            hash: 't_5_3',
+          },
+          {
+            numero: '5.4',
+            titulo: '5.4. Permisos, roles y control de acceso de usuarios',
+            hash: 't_5_4',
+          },
+          {
+            numero: '5.5',
+            titulo: '5.5. Optimización de bases de datos',
+            hash: 't_5_5',
+          },
+          {
+            numero: '5.6',
+            titulo: '5.6. Limpieza de la base de datos',
+            hash: 't_5_6',
+          },
+          {
+            numero: '5.7',
+            titulo: '5.7. Pruebas en la base de datos',
+            hash: 't_5_7',
+          },
+        ],
+      },
+      {
+        nombreRuta: 'tema6',
+        numero: '6',
+        titulo: 'MySQL',
         desarrolloContenidos: true,
       },
     ],
