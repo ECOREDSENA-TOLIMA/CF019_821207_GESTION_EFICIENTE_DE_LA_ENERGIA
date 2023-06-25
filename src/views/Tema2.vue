@@ -1,7 +1,7 @@
 <template lang="pug">
 .curso-main-container.pb-3
   BannerInterno
-  .container.tarjeta.tarjeta--blanca.p-4.p-md-5.mb-5
+  .container.tarjeta.tarjeta--gris.p-4.p-md-5.mb-5
     .titulo-principal.color-acento-botones
       .titulo-principal__numero
         span 2
@@ -16,7 +16,7 @@
 
     .row.justify-content-center.mt-5(data-aos="fade-right")
       .col-lg-8
-        AcordionA.mb-5(tipo="b" clase-tarjeta="tarjeta clr--gris")
+        AcordionA.mb-5(tipo="b" clase-tarjeta="tarjeta--azul")
           .row(titulo="Fase 1 - Planificación")
             .col-12
               p La fase de planificación comienza cuando un cliente solicita desarrollar un proyecto de base de datos. Es un conjunto de tareas o actividades que deciden el recurso requerido en el desarrollo de la base de datos y el tiempo límite de las diferentes actividades. Durante la fase de planificación se realizan cuatro actividades principales:
