@@ -163,6 +163,11 @@ export default {
         download: 'downloads/material.zip',
       },
       {
+        icono: 'fas fa-download',
+        titulo: 'Descargar PDF',
+        download: 'downloads/CFA_019_821207.pdf',
+      },
+      {
         icono: 'far fa-registered',
         titulo: 'Créditos',
         nombreRuta: 'creditos',
