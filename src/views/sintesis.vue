@@ -5,12 +5,12 @@
 
     .col-12.titulo-sexto.color-acento-contenido.mt-3(data-aos="fade-right")
       p.titulo.pb-0.mb-0 <b>Tecnología en gestión eficiente de la energía</b> 
-      p Síntesis: Base de datos
+      p.mb-0 Síntesis: Base de datos
 
     .row.justify-content-center
-      .col-lg-10.mb-5
+      .col-12.mb-5
         figure
-          img(src="@/assets/curso/temas/sintesis.png", alt="alt")
+          img(src="@/assets/curso/temas/sintesis.svg", alt="alt")
       .col-auto
         a.anexo.mb-4(:href="obtenerLink('/downloads/sintesis.pdf')" target="_blank")
           .anexo__icono

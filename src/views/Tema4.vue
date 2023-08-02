@@ -32,7 +32,7 @@
       SlyderA(tipo="b")
         .row.mt-5
           .col-md-6.mb-4.mb-md-0
-            p Puede ser un objeto con existencia física - una persona, automóvil, casa o empleado en particular - o puede ser un objeto con existencia conceptual - una empresa, un trabajo o un curso universitario-.
+            p Puede ser un objeto con existencia física - una persona, automóvil, casa o empleado en particular - o puede ser un objeto con existencia conceptual - una empresa, un trabajo o un curso universitario.
             p Una entidad es un objeto de tipo de entidad y el conjunto de todas las entidades se denomina conjunto de entidades, por ejemplo, E1 es una entidad que tiene el tipo de entidad estudiante y el conjunto de todos los estudiantes se denomina conjunto de entidades. En el diagrama ER, el tipo de entidad se representa como:
 
           .col-md-6
@@ -93,7 +93,7 @@
     .tarjeta.tarjeta--azul.p-4(data-aos="fade-left")
       SlyderA(tipo="b")
         .row.mt-5
-          p Un tipo de relación representa la asociación entre tipos de entidad, por ejemplo, ‘inscrito en' es un tipo de relación que existe entre el tipo de entidad estudiante y curso. En el diagrama ER, el tipo de relación está representado por un diamante y conecta las entidades con líneas.
+          p Un tipo de relación representa la asociación entre tipos de entidad, por ejemplo, “inscrito en” es un tipo de relación que existe entre el tipo de entidad estudiante y curso. En el diagrama ER, el tipo de relación está representado por un diamante y conecta las entidades con líneas.
           
           figure
             img(src='@/assets/curso/temas/tema4/img8.png', alt='')
@@ -118,7 +118,7 @@
             img(src='@/assets/curso/temas/tema4/img11.png', alt='')
 
         .row.mt-5
-          p <b>Relación n-aria:</b> Cuando hay un conjunto de n entidades que participan en una relación, la relación se denomina relación n-aria. 
+          p <b>Relación unaria:</b> Cuando hay un conjunto de “n” entidades que participan en una relación, la relación se denomina relación unaria. 
           p <b>Cardinalidad:</b> El número de veces que una entidad de un conjunto de entidades participa en un conjunto de relaciones se conoce como cardinalidad. La cardinalidad puede ser de diferentes tipos:
           p <b>Uno a uno:</b> cuando cada entidad de cada conjunto de entidades puede participar sólo una vez en la relación, la cardinalidad es uno a uno. Supongamos que un hombre puede casarse con una mujer y una mujer puede casarse con un hombre. Entonces la relación será uno a uno.
 
@@ -127,7 +127,7 @@
             img(src='@/assets/curso/temas/tema4/img12.png', alt='')
 
         .row.mt-5
-          p <b>Muchos a uno:</b> Cuando las entidades de un conjunto de entidades solo pueden participar una vez en el conjunto de relaciones y las entidades de otro conjunto de entidades pueden participar más de una vez en el conjunto de relaciones, la cardinalidad es de muchos a uno. Supongamos que un estudiante solo puede tomar un curso, pero muchos estudiantes pueden tomar un curso. Entonces, la cardinalidad será n a 1. Significa que para un curso puede haber n estudiantes, pero para un estudiante, solo habrá un curso.
+          p <b>Muchos a uno:</b> Cuando las entidades de un conjunto de entidades solo pueden participar una vez en el conjunto de relaciones y las entidades de otro conjunto de entidades pueden participar más de una vez en el conjunto de relaciones, la cardinalidad es de muchos a uno. Supongamos que un estudiante solo puede tomar un curso, pero muchos estudiantes pueden tomar un curso. Entonces, la cardinalidad será “n” a 1. Significa que para un curso puede haber “n” estudiantes, pero para un estudiante, solo habrá un curso.
 
           figure
             img(src='@/assets/curso/temas/tema4/img13.png', alt='')
@@ -159,10 +159,12 @@
         figure
           img(src='@/assets/curso/temas/tema4/img15.svg', alt='')
 
-    p.mt-5(data-aos="zoom-in") El diagrama muestra el conjunto de relaciones 'inscrito en' con el conjunto de entidad de estudiante con participación total y el conjunto de entidad del curso con participación parcial.
+    p.mt-5(data-aos="zoom-in") El diagrama muestra el conjunto de relaciones “inscrito en” con el conjunto de entidad de estudiante con participación total y el conjunto de entidad del curso con participación parcial.
 
     .row.justify-content-center 
       .col-10
+        .titulo-sexto.color-acento-contenido.mb-0
+          p.mb-0 #[b Figura 2.] #[i Diagrama conjunto de relaciones.]
         figure
           img(src='@/assets/curso/temas/tema4/img16.png', alt='')
 
@@ -183,6 +185,8 @@
 
     .row.justify-content-center.mt-5 
       .col-10
+        .titulo-sexto.color-acento-contenido.mb-0
+          p.mb-0 #[b Figura 3.] #[i Diagrama relación de identificación.]
         figure
           img(src='@/assets/curso/temas/tema4/img18.png', alt='')
 

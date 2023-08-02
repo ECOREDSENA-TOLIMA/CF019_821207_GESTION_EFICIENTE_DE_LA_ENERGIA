@@ -22,7 +22,7 @@
         p(data-aos="zoom-in") SQL es un lenguaje estandarizado que facilita el almacenamiento, la actualización y el acceso a la información, por ejemplo, puede utilizar SQL para recuperar información de productos y almacenar información de clientes para un sitio web. MySQL también es lo suficientemente rápido y flexible como para permitirle almacenar registros e imágenes.
         p(data-aos="zoom-in") Los principales objetivos de MySQL son la velocidad, la solidez y la facilidad de uso. MySQL se desarrolló originalmente porque en TcX se necesitaba un servidor SQL que pudiera manejar bases de datos muy grandes en un orden de magnitud más rápido de lo que cualquier proveedor de bases de datos podría ofrecer. Ahora se ha estado usando MySQL desde 1996 en un entorno con más de 40 bases de datos que contienen 10.000 tablas, de las cuales más de 500 tienen más de 7 millones de filas. Se trata de unos 100 gigabytes de datos de misión crítica. La base sobre la que se construye MySQL es un conjunto de rutinas que se han utilizado en un entorno de producción muy exigente durante muchos años. Aunque MySQL todavía está en desarrollo, ya ofrece un conjunto de funciones poderosas y muy útil. 
 
-        .tarjeta.color-primario.p-3.mt-5
+        .tarjeta.color-primario.p-3.mt-5.mb-4
               .row.justify-content-around.align-items-center
                 .col-auto
                   img(src="@/assets/curso/temas/tema3/img1.svg").img65
@@ -32,7 +32,7 @@
                       h4.mb-1 Para mayor comprensión diríjase al:
                       p.text-small.mb-0 Anexo 9 - Más sobre MySQL 
                     .col-sm-auto
-                      a.boton.color-acento-botones(href="https://docs.google.com/document/d/1ojd75qS-nmacZ1P0AaHxt-56VS9Gezhbf_V-sVsJuH4/edit?usp=sharing" target="_blank")
+                      a.boton.color-acento-botones(:href="obtenerLink('/downloads/Anexo_9_Mas_sobre_MySQL.pdf')" target="_blank")
                         span Descargar
                         i.fas.fa-file-download
       .col-5

@@ -98,7 +98,7 @@
               ul.lista-ul--color
                 li(data-aos="zoom-in")
                   i.fas.fa-database 
-                  | Para localizar un registro se busca el registro de índice con el valor de clave de búsqueda más grande menor o igual al valor de clave de búsqueda que se está buscando.
+                  | Para localizar un registro se busca el registro de índice con el valor de clave de búsqueda más grande, menor o igual al valor de clave de búsqueda que se está buscando.
                   ul.lista-ul--color
                 li(data-aos="zoom-in")
                   i.fas.fa-database 
@@ -147,38 +147,40 @@
     .row.align-items-center.justify-content-center
       .col-10
         .caja--blanca--borde.mt-5.p-5
-          p(data-aos="zoom-in") Requiere más tiempo en comparación con el índice agrupado porque se realiza una cierta cantidad de trabajo adicional para extraer los datos siguiendo más el puntero. En el caso de un índice agrupado los datos están directamente delante del índice.
+          p(data-aos="zoom-in") Requiere más tiempo en comparación con el índice agrupado porque se realiza una cierta cantidad de trabajo adicional para extraer los datos siguiendo más el puntero. En el caso de un índice agrupado, los datos están directamente delante del índice.
           .row.align-items-center.justify-content-center
-            .col-6
+            .col-12
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 #[b Figura 4.] #[i Índice agrupado.]
+            .col-md-8.col-12
               img(src='@/assets/curso/temas/tema5/img6.png', alt='')
 
     .row.align-items-center.justify-content-center
       .col-10
         .caja--blanca--borde.mt-5.p-5
-          p(data-aos="zoom-in") Indexación multinivel: con el crecimiento del tamaño de la base de datos los índices también crecen. Como el índice se almacena en la memoria principal, un índice de un solo nivel puede llegar a ser de un tamaño demasiado grande para almacenarlo con múltiples accesos al disco. La indexación multinivel segrega el bloque principal en varios bloques más pequeños para que el mismo pueda almacenarse en un solo bloque. Los bloques externos se dividen en bloques internos que, a su vez, apuntan a los bloques de datos. Esto se puede almacenar fácilmente en la memoria principal con menos gastos generales. Ver figura.
-          .col-12.titulo-sexto.color-acento-contenido.mt-3(data-aos="fade-right")
-            p.titulo.pb-0.mb-0 <b>Figura 2.</b> Índice multinivel
-              
+          p(data-aos="zoom-in") #[b Indexación multinivel]: con el crecimiento del tamaño de la base de datos, los índices también crecen. Como el índice se almacena en la memoria principal, un índice de un solo nivel puede llegar a ser de un tamaño demasiado grande para almacenarlo con múltiples accesos al disco. La indexación multinivel segrega el bloque principal en varios bloques más pequeños para que el mismo pueda almacenarse en un solo bloque. Los bloques externos se dividen en bloques internos que, a su vez, apuntan a los bloques de datos. Esto se puede almacenar fácilmente en la memoria principal con menos gastos generales. Ver figura 4.
+          .col-12.mt-3
+            .titulo-sexto.color-acento-contenido(data-aos="fade-right")
+              p.mb-0 #[b Figura 5.] #[i Índice multinivel.]
           .row.align-items-center.justify-content-center
-            .col-6
-              
+            .col-md-8.col-12
               img(src='@/assets/curso/temas/tema5/img7.png', alt='')
 
     .row 
-      .col-6
+      .col-md-6.col-12
         .row.align-items-center.justify-content-center
           .col-auto
             .tarjeta.color-primario.p-3.mt-5
               .row.justify-content-around.align-items-center
                 .col-auto
                   img(src="@/assets/curso/temas/tema3/img1.svg").img65
-                .col
+                .col.py-2
                   .row.justify-content-between.align-items-center
                     .col.mb-3.mb-sm-0
                       h4.mb-1 Para mayor comprensión diríjase al:
-                      p.text-small.mb-0 Anexo 2 - Índices basados en varios campos utilizando Microsoft Access.
+                      p.text-small.mb-0 Anexo 2 - Índices basados en varios campos utilizando #[em Microsoft Access].
                     .col-sm-auto
-                      a.boton.color-acento-botones(href="https://docs.google.com/document/d/1ojd75qS-nmacZ1P0AaHxt-56VS9Gezhbf_V-sVsJuH4/edit?usp=sharing" target="_blank")
+                      a.boton.color-acento-botones(:href="obtenerLink('/downloads/Anexo_2_Indices_basados_en_varios_campos_utilizando_Microsoft_Access.pdf')" target="_blank")
                         span Descargar
                         i.fas.fa-file-download
 
@@ -193,9 +195,9 @@
                   .row.justify-content-between.align-items-center
                     .col.mb-3.mb-sm-0
                       h4.mb-1 Para mayor comprensión diríjase al:
-                      p.text-small.mb-0 Anexo 3 - Crear un índice y utilizarlo para mejorar el rendimiento en Microsoft Access. 
+                      p.text-small.mb-0 Anexo 3 - Crear un índice y utilizarlo para mejorar el rendimiento en #[em Microsoft Access]. 
                     .col-sm-auto
-                      a.boton.color-acento-botones(href="https://docs.google.com/document/d/1ojd75qS-nmacZ1P0AaHxt-56VS9Gezhbf_V-sVsJuH4/edit?usp=sharing" target="_blank")
+                      a.boton.color-acento-botones(:href="obtenerLink('/downloads/Anexo_3_Crear_un_indice_y_utilizarlo_para_mejorar_el_rendimiento_en_Microsoft_Access.pdf')" target="_blank")
                         span Descargar
                         i.fas.fa-file-download
 
@@ -216,76 +218,76 @@
           .row(titulo="Puede utilizar vistas para")
             .col-12
               ul.lista-ul--color
-                li(data-aos="zoom-in")
+                li
                   i.fas.fa-database 
                   | Centrarse en los datos que les interesan y en las tareas de las que son responsables. Los datos que no son de interés para un usuario pueden quedar fuera de la vista.
-                li(data-aos="zoom-in")
+                li
                   i.fas.fa-database 
                   | Definir las combinaciones, proyecciones y selecciones de uso frecuente como vistas para que los usuarios no tengan que especificar todas las condiciones y calificaciones cada vez que se realiza una operación en esos datos.
-                li(data-aos="zoom-in")
+                li
                   i.fas.fa-database 
                   | Mostrar diferentes datos para diferentes usuarios, incluso cuando estén usando los mismos datos al mismo tiempo. Esta ventaja es particularmente importante cuando los usuarios de diferentes intereses y niveles de habilidad comparten la misma base de datos. 
 
           .row(titulo="Ventajas")
             .col-12
               ul.lista-ul--color
-                li(data-aos="zoom-in")
+                li
                   i.fas.fa-database 
                   | Proporcione un nivel adicional de seguridad de la tabla al restringir el acceso a un conjunto predeterminado de filas o columnas de una tabla. 
-                li(data-aos="zoom-in")
+                li
                   i.fas.fa-database 
                   | Ocultar la complejidad de los datos: por ejemplo, una sola vista se puede definir con una combinación, que es una colección de columnas o filas relacionadas en varias tablas; sin embargo, la vista oculta el hecho de que esta información en realidad se origina en varias tablas.
-                li(data-aos="zoom-in")
+                li
                   i.fas.fa-database 
                   |	Simplifique las declaraciones para el usuario: las vistas permiten a los usuarios seleccionar información de varias tablas sin saber realmente cómo realizar la unión.
-                li(data-aos="zoom-in")
+                li
                   i.fas.fa-database 
                   | Presentar datos en una perspectiva diferente: las columnas de vistas se pueden renombrar sin afectar las tablas en las que se basan las vistas.
-                li(data-aos="zoom-in")
+                li
                   i.fas.fa-database 
                   | Aislar las aplicaciones de los cambios en las definiciones de las tablas base. Si una vista hace referencia a tres columnas de una tabla de cuatro columnas, si se agrega una quinta columna o se cambia la cuarta columna, la vista y las aplicaciones asociadas no se ven afectadas.
-                li(data-aos="zoom-in")
+                li
                   i.fas.fa-database 
                   | Consulta expresa que no se puede expresar sin usar una vista, por ejemplo, se puede definir una vista que une un grupo por vista con una tabla o se puede definir una vista que une una vista UNION con una tabla.
-                li(data-aos="zoom-in")
+                li
                   i.fas.fa-database 
                   | Ahorro de consultas complejas.
 
           .row(titulo="Desventajas")
             .col-12
               ul.lista-ul--color
-                li(data-aos="zoom-in")
+                li
                   i.fas.fa-database 
                   | Las filas disponibles a través de una vista no se ordenan, ni tampoco se ordenan.
-                li(data-aos="zoom-in")
+                li
                   i.fas.fa-database 
                   | No se pueden utilizar operaciones DML en una vista.
-                li(data-aos="zoom-in")
+                li
                   i.fas.fa-database 
                   | Cuando la tabla se descarta, la vista se vuelve inactiva, depende de los objetos de la tabla. 
-                li(data-aos="zoom-in")
+                li
                   i.fas.fa-database 
                   | Afecta al rendimiento, la consulta desde la vista lleva más tiempo que la consulta directa desde la tabla.
 
           .row(titulo="Tipos de vistas")
             .col-12
               ul.lista-ul--color
-                li(data-aos="zoom-in")
+                li
                   i.fas.fa-database 
                   | <b>Vistas definidas por el sistema:</b> son vistas predefinidas que ya existen en la base de datos maestra de SQL Server. También se utilizan como vistas de plantilla para todas las bases de datos recién creadas. Estas vistas del sistema se adjuntarán automáticamente a cualquier base de datos definida por el usuario. Se tienen los siguientes tipos de vistas definidas por el sistema.
-                li(data-aos="zoom-in")
+                li
                   i.fas.fa-database 
                   | <b>Vista de esquema de información:</b> en SQL Server se tienen veinte vistas de esquemas diferentes. Se utilizan para mostrar información de una base de datos, como tablas y columnas. 
-                li(data-aos="zoom-in")
+                li
                   i.fas.fa-database 
                   | <b>Vista de catálogo:</b> se introdujeron con SQL Server 2005. Se utilizan para mostrar información de autodescripción de la base de datos.
-                li(data-aos="zoom-in")
+                li
                   i.fas.fa-database 
                   | <b>Vista de gestión dinámica:</b> se introdujeron en SQL Server 2005. Estas vistas brindan al administrador información de la base de datos sobre el estado actual de la máquina SQL Server. Estos valores ayudan al administrador a analizar problemas y ajustar el servidor para un rendimiento óptimo. Estos son de dos tipos:
-                li(data-aos="zoom-in")
+                li
                   i.fas.fa-database 
                   | <b>Vista de administración dinámica con ámbito de servidor:</b> estos se almacenan solo en la base de datos maestra.
-                li(data-aos="zoom-in")
+                li
                   i.fas.fa-database 
                   | <b>Vista de administración dinámica con ámbito de base de datos:</b> estos se almacenan en cada base de datos.
 
@@ -294,10 +296,10 @@
               p Estos tipos de vista los definen los usuarios. Se tiene dos tipos de vistas definidas por el usuario.
 
               ul.lista-ul--color
-                li(data-aos="zoom-in")
+                li
                   i.fas.fa-database 
                   | <b>Vista simple:</b> cuando se crea una vista en una sola tabla, se denomina vista simple. En la vista simple se puede insertar, actualizar, eliminar datos. Solo se puede insertar datos en una vista simple si se tiene una clave principal y todos los campos no nulos en la vista.
-                li(data-aos="zoom-in")
+                li
                   i.fas.fa-database 
                   | <b>Vista compleja:</b> cuando se crea una vista en más de una tabla, se denomina vista compleja. Solo se puede actualizar datos en una vista compleja. No se puede insertar datos en una vista compleja.
 
@@ -311,32 +313,91 @@
 
     .row.justify-content-center.align-items-center.py-0
       .col-12(data-aos="fade-up")
-        p.mb-5  En el siguiente video podrá revisar los reportes o informes en las bases de datos, cómo realizarlos y aplicarlos.
+        p.mb-5 En el siguiente recurso podrá revisar los reportes o informes en las bases de datos, cómo realizarlos y aplicarlos. 
       .col-12.mt-2(data-aos="fade-up")
-        figure.mt-0
-        .video
-          iframe(width="560" height="315" src="https://www.youtube.com/embed/NaoMfuuuJks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)      
+        TabsA.color-acento-botones.mb-5
+          .tarjeta.tarjeta--azul.p-4(titulo="Creación")
+            .row
+              .col-12
+                figure
+                  img.mx-auto(src='@/assets/curso/temas/tema5/img-39.svg', alt='', style="width:auto")
+            h4 Creación
+            p Se crean a partir de datos visualizados para el análisis, el descubrimiento de datos y la toma de decisiones, y contienen datos útiles para la toma de decisiones y el análisis. La mayoría de las aplicaciones comerciales vienen con una herramienta de informes incorporada, que es una interfaz de #[em front-end] que llama a consultas de bases de datos de #[em back-end]. 
+          .tarjeta.tarjeta--azul.p-4(titulo="Lenguaje de consulta")
+            .row.p-3
+              .col-12
+                figure
+                  img.mx-auto(src='@/assets/curso/temas/tema5/img-40.svg', alt='', style="width:auto")
+            h4 Lenguaje de consulta
+            p Para extraer datos, una consulta debe ejecutarse con varias herramientas que llamen al menos a un lenguaje de consulta, incluyendo: 
+            p • SQL (lenguaje de consulta estructurado). 
+            p • HTSQL (lenguaje de consulta estructurado de hipertexto). 
+            p • Lenguaje de consulta Polycarp. 
+            p • Protocolo SPARQL. 
+            p • Lenguaje de consulta RDF. 
+          .tarjeta.tarjeta--azul.p-4(titulo="Beneficios de los informes ")
+            .row.p-3
+              .col-12
+                figure
+                  img.mx-auto(src='@/assets/curso/temas/tema5/img-41.svg', alt='', style="width:auto")
+            h4 Beneficios de los informes de bases de datos
+            p Tener una herramienta de informes de bases de datos en su lugar facilita la creación de informes y gráficos a partir de bases de datos. 
+          .tarjeta.tarjeta--azul.p-4(titulo="Informes y cuadros de mando detallados")
+            .row.p-3
+              .col-12
+                figure
+                  img.mx-auto(src='@/assets/curso/temas/tema5/img-42.svg', alt='', style="width:auto")
+            h4 Informes y cuadros de mando detallados
+            p Crear informes y paneles para medir el rendimiento y obtener información sobre la organización. También utilizar informes para hacer seguimiento a los KPIs. Ordenar, buscar y desglosar informes para profundizar y comprender el rendimiento empresarial. En una organización, los gerentes tienden a tener requisitos particulares de presentación de informes. Los informes se pueden personalizar de acuerdo con el usuario objetivo y como resultado, se puede obtener información rápidamente y tomar mejores decisiones.  
+          .tarjeta.tarjeta--azul.p-4(titulo="Optimice recursos y tiempo")
+            .row.p-3
+              .col-12
+                figure
+                  img.mx-auto(src='@/assets/curso/temas/tema5/img-43.svg', alt='', style="width:auto")
+            h4 Optimice recursos y tiempo
+            p Acelere el lanzamiento al mercado y reduzca el esfuerzo en desarrollo, permitiendo que su empresa se enfoque en las capacidades centrales del producto. Las herramientas de informes de bases de datos son intuitivas y no requieren conocimientos de SQL, lo que facilita la creación rápida de informes sin aprender software complejo. Generar informes de cualquier tipo es sencillo con una interfaz de arrastrar y soltar. 
+          .tarjeta.tarjeta--azul.p-4(titulo="Visualizaciones de datos avanzadas")
+            .row.p-3
+              .col-12
+                figure
+                  img.mx-auto(src='@/assets/curso/temas/tema5/img-44.svg', alt='', style="width:auto")
+            h4 Visualizaciones de datos avanzadas
+            p Cree visualizaciones de datos avanzadas desde gráficos de burbujas hasta gráficos de viñetas, detecte patrones y descubra hallazgos útiles en grandes cantidades de datos, incluyendo macrodatos. Genere informes resumidos o detallados para obtener una visión del estado de su negocio. Estos informes basados en la web se actualizan en tiempo real, brindando los datos más recientes y eficientes en términos de rendimiento.
+          .tarjeta.tarjeta--azul.p-4(titulo="Proteja sus datos confidenciales")
+            .row.p-3
+              .col-12
+                figure
+                  img.mx-auto(src='@/assets/curso/temas/tema5/img-45.svg', alt='', style="width:auto")
+            h4 Proteja sus datos confidenciales
+            p Las hojas de cálculo son propensas a errores humanos y datos en la celda incorrecta, o si alguien comete un error al ingresar valores numéricos puede llevar su negocio al caos. 
+          .tarjeta.tarjeta--azul.p-4(titulo="Examinar numerosas opciones")
+            .row.p-3
+              .col-12
+                figure
+                  img.mx-auto(src='@/assets/curso/temas/tema5/img-46.svg', alt='', style="width:auto")
+            h4 Examinar numerosas opciones
+            p Los valores que se analizarán se pueden eliminar, mientras que se pueden crear gráficos poderosos en segundos. Es posible personalizar sus informes con información sobre herramientas adicional y contrastarlos con el período anterior o generar alertas para que sus informes sean más productivos y precisos. 
 
     Separador
     #t_5_4.titulo-segundo.color-acento-botones(data-aos="fade-left")
       h2 5.4. Permisos, roles y control de acceso de usuarios
 
     .tarjeta.row.mb-5(style="width:100%")(data-aos="fade-right")
-      .col-md.caja.color-secundario
+      .col-md.col-12.caja.color-secundario
         .row.justify-content-center.mb-4
           .col-auto(style="padding:0px")
             figure
               img(src='@/assets/curso/temas/tema5/img9.png', alt='')
           
-        p.p-3 Se refiere a las diferentes autorizaciones que se deben establecer en una base de datos, en otras palabras, es la función de especificar derechos / privilegios de acceso a los recursos relacionados con la seguridad de la información. Más formalmente, "autorizar" es definir una política de acceso; con la gestión de identidad controlada, el control de acceso de usuario se concede en función de los permisos asignados a un rol.
-      .col-md.caja.color-primario
+        p.p-3 Se refiere a las diferentes autorizaciones que se deben establecer en una base de datos, en otras palabras, es la función de especificar derechos / privilegios de acceso a los recursos relacionados con la seguridad de la información. Más formalmente, “autorizar” es definir una política de acceso; con la gestión de identidad controlada, el control de acceso de usuario se concede en función de los permisos asignados a un rol.
+      .col-md.col-12.caja.color-primario
         .row.justify-content-center.mb-4
           .col-auto(style="padding:0px")
             figure
               img(src='@/assets/curso/temas/tema5/img10.png', alt='')
           
         p.p-3 Cada aplicación protegida por el habilitador de la base de datos puede definir un conjunto de permisos, es decir, un conjunto de cosas que se pueden hacer dentro de la aplicación que gestiona la base de datos, por ejemplo, dentro de la aplicación, la capacidad de enviar un comando para desbloquear una puerta inteligente. De manera similar, la capacidad de enviar un comando para hacer sonar la alarma y la capacidad de alterar los precios.
-      .col-md.caja.color-secundario.text-white
+      .col-md.col-12.caja.color-secundario.text-white
         .row.justify-content-center.mb-4
           .col-auto(style="padding:0px")
             figure
@@ -474,7 +535,7 @@
                       h4.mb-1 Para mayor comprensión diríjase al:
                       p.text-small.mb-0 Anexo 4 - Concesión y revocación de privilegios y funciones usando comandos.
                     .col-sm-auto
-                      a.boton.color-acento-botones(href="https://docs.google.com/document/d/1ojd75qS-nmacZ1P0AaHxt-56VS9Gezhbf_V-sVsJuH4/edit?usp=sharing" target="_blank")
+                      a.boton.color-acento-botones(:href="obtenerLink('/downloads/Anexo_4_Concesion_y_revocacion_de_privilegios_y_funciones_usando_comandos_SQL.pdf')" target="_blank")
                         span Descargar
                         i.fas.fa-file-download
 
@@ -489,9 +550,9 @@
                   .row.justify-content-between.align-items-center
                     .col.mb-3.mb-sm-0
                       h4.mb-1 Para mayor comprensión diríjase al:
-                      p.text-small.mb-0 Anexo 5 - Gestionar permisos de usuario en Microsoft Access.
+                      p.text-small.mb-0 Anexo 5 - Gestionar permisos de usuario en #[em Microsoft Access].
                     .col-sm-auto
-                      a.boton.color-acento-botones(href="https://docs.google.com/document/d/1ojd75qS-nmacZ1P0AaHxt-56VS9Gezhbf_V-sVsJuH4/edit?usp=sharing" target="_blank")
+                      a.boton.color-acento-botones(:href="obtenerLink('/downloads/Anexo_5_Gestionar_permisos_de_usuario_en_Microsoft_Access.pdf')" target="_blank")
                         span Descargar
                         i.fas.fa-file-download
 
@@ -555,9 +616,9 @@
                   .row.justify-content-between.align-items-center
                     .col.mb-3.mb-sm-0
                       h4.mb-1 Para mayor comprensión diríjase al:
-                      p.text-small.mb-0 Anexo 6 - Usar el analizador de rendimiento para optimizar una base de datos de Microsoft Access.
+                      p.text-small.mb-0 Anexo 6 - Usar el analizador de rendimiento para optimizar una base de datos de #[em Microsoft Access].
                     .col-sm-auto
-                      a.boton.color-acento-botones(href="https://docs.google.com/document/d/1ojd75qS-nmacZ1P0AaHxt-56VS9Gezhbf_V-sVsJuH4/edit?usp=sharing" target="_blank")
+                      a.boton.color-acento-botones(:href="obtenerLink('/downloads/Anexo_6_Usar_el_Analizador_de_rendimiento_para_optimizar_una_base_de_datos.pdf')" target="_blank")
                         span Descargar
                         i.fas.fa-file-download
 
@@ -568,13 +629,13 @@
               .row.justify-content-around.align-items-center
                 .col-auto
                   img(src="@/assets/curso/temas/tema3/img1.svg").img65
-                .col
+                .col.py-2
                   .row.justify-content-between.align-items-center
                     .col.mb-3.mb-sm-0
                       h4.mb-1 Para mayor comprensión diríjase al:
-                      p.text-small.mb-0 Anexo 7 - Aumentar la velocidad de ejecución de Microsoft Access.
+                      p.text-small.mb-0 Anexo 7 - Aumentar la velocidad de ejecución de #[em Microsoft Access].
                     .col-sm-auto
-                      a.boton.color-acento-botones(href="https://docs.google.com/document/d/1ojd75qS-nmacZ1P0AaHxt-56VS9Gezhbf_V-sVsJuH4/edit?usp=sharing" target="_blank")
+                      a.boton.color-acento-botones(:href="obtenerLink('/downloads/Anexo_7_Aumentar_la_velocidad_de_ejecucion_de_Microsoft_Access.pdf')" target="_blank")
                         span Descargar
                         i.fas.fa-file-download
 
@@ -593,11 +654,11 @@
         LineaTiempoD.color-primario
           .row(numero="1" titulo="Limpieza de la base de datos")
             .col-auto
-              p La cantidad de datos disponibles ha seguido aumentando y por lo tanto, existen oportunidades de error. Como resultado se confia en la limpieza de datos para optimizar nuestros procesos de gestión de base datos. La limpieza de los datos de una base de datos aumenta la integridad y relevancia de los datos al reducir las inconsistencias, eliminar errores y permitir que las empresas tomen decisiones precisas e informadas.
+              p La cantidad de datos disponibles ha seguido aumentando y por, lo tanto, existen oportunidades de error. Como resultado, se confía en la limpieza de datos para optimizar nuestros procesos de gestión de base datos. La limpieza de los datos de una base de datos aumenta la integridad y relevancia de los datos al reducir las inconsistencias, eliminar errores y permitir que las empresas tomen decisiones precisas e informadas.
 
           .row(numero="2" titulo="¿Qué es la limpieza de datos?")
             .col-auto
-              p Es el proceso de identificación y resolución de datos corruptos, inexactos o irrelevantes. Esta etapa crítica del procesamiento de datos, también conocida como depuración o limpieza de datos aumenta la coherencia, la confiabilidad, la gestión de las bases de datos y el valor de los datos de una empresa u organización.
+              p Es el proceso de identificación y resolución de datos corruptos, inexactos o irrelevantes. Esta etapa crítica del procesamiento de datos, también conocida como depuración o limpieza de datos, aumenta la coherencia, la confiabilidad, la gestión de las bases de datos y el valor de los datos de una empresa u organización.
 
           .row(numero="3" titulo="Las inexactitudes comunes en los datos ")
             .col-auto
@@ -611,7 +672,7 @@
           .row(numero="5" titulo="El poder de los datos limpios")
             
             .col-auto
-              p Una decisión es tan buena como los datos que la informan, y con cantidades masivas de datos que fluyen desde múltiples fuentes, una herramienta de limpieza de datos es más importante que nunca para garantizar la precisión de la información, la eficiencia de los procesos e impulsar la ventaja competitiva de una empresa u organización. Algunos de los principales beneficios de la depuración de datos incluyen:
+              p Una decisión es tan buena como los datos que la informan, y con cantidades masivas de datos que fluyen desde múltiples fuentes, una herramienta de limpieza de datos es más importante que nunca para garantizar la precisión de la información, la eficiencia de los procesos e impulsar la ventaja competitiva de una empresa u organización.
     
     .row.justify-content-center.mt-5(data-aos="fade-right")
       .col-lg-6
@@ -623,7 +684,7 @@
           .row(numero="7" titulo="Considere una empresa que se basa en datos generados por el cliente")
             
             .col-auto
-              p Para desarrollar cada nueva generación de sus sistemas de pedidos en línea y móviles como AnyWare de Domino's Pizza. Sin un programa de limpieza de datos es posible que los cambios y revisiones de la aplicación no se basen en información precisa o exacta. Como resultado, la nueva versión de la aplicación puede perder su objetivo y no cumplir con las necesidades o expectativas del cliente.
+              p Para desarrollar cada nueva generación de sus sistemas de pedidos en línea y móviles como #[em AnyWare de Domino's Pizza]. Sin un programa de limpieza de datos, es posible que los cambios y revisiones de la aplicación no se basen en información precisa o exacta. Como resultado, la nueva versión de la aplicación puede perder su objetivo y no cumplir con las necesidades o expectativas del cliente.
 
           .row(numero="8" titulo="Eficiencia mejorada ")
             .col-auto
@@ -783,7 +844,7 @@
     .row.mt-5
       .col-7
         .h5.mb-3 ¿Cómo probar las bases de datos?
-        p(data-aos="zoom-in") Ahora que se sabe qué probar ¿cómo se deben realizar las pruebas? Sorprendentemente, ejecutar las pruebas de las bases de datos no es tan diferente a ejecutar pruebas en aplicaciones. Como se mencionó anteriormente, estas pruebas se pueden realizar manualmente realizando operaciones desde la interfaz de usuario de la aplicación para asegurarse de que se devuelvan los datos correctos después de cada operación o verificando los registros de la base de datos para ver los resultados de la operación. También puede utilizar un DBMS para ejecutar sus consultas de prueba y validar los resultados. Si se prefiere no realizar pruebas manualmente, puede sentirse aliviado al saber que las pruebas automatizadas de bases de datos son muy similares a las pruebas automatizadas en el código de la aplicación. La principal diferencia es que esta vez sus pruebas ejecutan consultas en lugar de código de aplicación, también se aplican los siguientes pasos que se encuentran en el código de la aplicación de prueba:
+        p(data-aos="zoom-in") Ahora que se sabe qué probar, ¿cómo se deben realizar las pruebas? Sorprendentemente, ejecutar las pruebas de las bases de datos no es tan diferente a ejecutar pruebas en aplicaciones. Como se mencionó anteriormente, estas pruebas se pueden realizar manualmente realizando operaciones desde la interfaz de usuario de la aplicación para asegurarse de que se devuelvan los datos correctos después de cada operación o verificando los registros de la base de datos para ver los resultados de la operación. También puede utilizar un DBMS para ejecutar sus consultas de prueba y validar los resultados. Si se prefiere no realizar pruebas manualmente, puede sentirse aliviado al saber que las pruebas automatizadas de bases de datos son muy similares a las pruebas automatizadas en el código de la aplicación. La principal diferencia es que esta vez sus pruebas ejecutan consultas en lugar de código de aplicación, también se aplican los siguientes pasos que se encuentran en el código de la aplicación de prueba:
 
         .tarjeta.tarjeta--blanca.p-4
           ul.lista-ul--color
@@ -838,7 +899,7 @@
                       h4.mb-1 Para mayor comprensión diríjase al:
                       p.text-small.mb-0 Anexo 8 - Lista de herramientas de prueba de bases de datos.
                     .col-sm-auto
-                      a.boton.color-acento-botones(href="https://docs.google.com/document/d/1ojd75qS-nmacZ1P0AaHxt-56VS9Gezhbf_V-sVsJuH4/edit?usp=sharing" target="_blank")
+                      a.boton.color-acento-botones(:href="obtenerLink('/downloads/Anexo_8_Lista_de_herramientas_de_prueba_de_bases_de_datos.pdf')" target="_blank")
                         span Descargar
                         i.fas.fa-file-download
       .col-5

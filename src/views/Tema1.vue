@@ -14,7 +14,7 @@
         .row(titulo="")
           .col-md-6.mb-4.mb-md-0
             p <b>Basado en archivos: </b>
-            p En 1968 fue el año en que se introdujeron las bases de datos basadas en archivos. En las bases de datos basadas en archivos, los datos se mantenían en un archivo plano. Aunque los archivos tienen muchas ventajas, existen varias limitaciones. Una de las principales ventajas es que el sistema de archivos tiene varios métodos de acceso, por ejemplo, secuencial, indexado y aleatorio. Requiere una programación extensa en un lenguaje de tercera generación como COBOL, BASIC.
+            p En 1968 fue el año en que se introdujeron las bases de datos basadas en archivos. En las bases de datos basadas en archivos, los datos se mantenían en un archivo plano. Aunque los archivos tienen muchas ventajas, existen varias limitaciones. Una de las principales ventajas es que el sistema de archivos tiene varios métodos de acceso, por ejemplo, secuencial, indexado y aleatorio. Requiere una programación extensa en un lenguaje de tercera generación como #[em COBOL, BASIC].
 
           .col-md-6
             figure
@@ -23,7 +23,7 @@
         .row(titulo="")
           .col-md-6.mb-4.mb-md-0
             p <b>Modelo de datos jerárquico:  </b>
-            p En 1968-1980 fue la era de la base de datos jerárquica. El prominente modelo de base de datos jerárquica fue el primer DBMS de IBM. Se llamó IMS (Sistema de Gestión de la Información). En este modelo,¿ los archivos están relacionados de manera padre / hijo. Al igual que el sistema de archivos este modelo también tenía algunas limitaciones, como una implementación compleja, falta de independencia estructural, no puede manejar fácilmente una relación de muchos a muchos, etc.
+            p En 1968-1980 fue la era de la base de datos jerárquica. El prominente modelo de base de datos jerárquica fue el primer DBMS de IBM. Se llamó IMS (Sistema de Gestión de la Información). En este modelo, ¿los archivos están relacionados de manera padre / hijo?. Al igual que el sistema de archivos este modelo también tenía algunas limitaciones, como una implementación compleja, falta de independencia estructural, no puede manejar fácilmente una relación de muchos a muchos, etc.
 
           .col-md-6
             figure
@@ -32,7 +32,7 @@
         .row(titulo="")
           .col-md-6.mb-4.mb-md-0
             p <b>Modelo de datos de red:  </b>
-            p Charles Bachman desarrolló el primer DBMS en Honeywell llamado Integrated Data Store (IDS). Fue desarrollado a principios de la década de 1960; pero fue estandarizado en 1971 por el grupo CODASYL (Conference on Data Systems Languages). En este modelo, los archivos están relacionados como propietarios y miembros, como en el modelo de red común. El modelo de datos de red identificó los siguientes componentes:
+            p #[em Charles Bachman] desarrolló el primer em DBMS en #[em Honeywell] llamado #[em Integrated Data Store] (IDS). Fue desarrollado a principios de la década de 1960; pero fue estandarizado en 1971 por el grupo CODASYL (Conference on Data Systems Languages). En este modelo, los archivos están relacionados como propietarios y miembros, como en el modelo de red común. El modelo de datos de red identificó los siguientes componentes:
             ul.lista-ul--color
               li(data-aos="zoom-in")
                 i.fas.fa-database 
@@ -53,7 +53,7 @@
         .row(titulo="")
           .col-md-6.mb-4.mb-md-0
             p <b>Base de datos relacional:   </b>
-            p En 1970 – presente, es la era de las bases de datos relacionales y la gestión de bases de datos. En 1970 EF Codd propuso el modelo relacional. El modelo de base de datos relacional tiene dos terminologías principales llamadas instancia y esquema. La instancia es una tabla con filas o columnas. El esquema especifica la estructura como nombre de la relación, tipo de cada columna y nombre. Este modelo utiliza algún concepto matemático como la teoría de conjuntos y la lógica de predicados. La primera aplicación de base de datos de Internet se creó en 1995. Durante la era de la base de datos relacional se habían introducido muchos más modelos como el modelo orientado a objetos, el modelo relacional de objetos, etc.
+            p En 1970 - presente, es la era de las bases de datos relacionales y la gestión de bases de datos. En 1970 EF Codd propuso el modelo relacional. El modelo de base de datos relacional tiene dos terminologías principales llamadas instancia y esquema. La instancia es una tabla con filas o columnas. El esquema especifica la estructura como nombre de la relación, tipo de cada columna y nombre. Este modelo utiliza algún concepto matemático como la teoría de conjuntos y la lógica de predicados. La primera aplicación de base de datos de Internet se creó en 1995. Durante la era de la base de datos relacional se habían introducido muchos más modelos como el modelo orientado a objetos, el modelo relacional de objetos, etc.
 
           .col-md-6
             figure
@@ -153,7 +153,7 @@
             ul.lista-ul--color
               li(data-aos="zoom-in")
                 i.fas.fa-database 
-                | Objetos.
+                |  Objetos.
               li(data-aos="zoom-in")
                 i.fas.fa-database 
                 |	Clases.
@@ -177,7 +177,7 @@
             ul.lista-ul--color
               li(data-aos="zoom-in")
                 i.fas.fa-database 
-                | Atomicidad.
+                |  Atomicidad.
               li(data-aos="zoom-in")
                 i.fas.fa-database 
                 |	Consistencia.
@@ -295,7 +295,7 @@
                 ul.lista-ul--color
                   li(data-aos="zoom-in")
                     i.fas.fa-database 
-                    | Mesa.
+                    |  Mesa.
                   li(data-aos="zoom-in")
                     i.fas.fa-database 
                     |	Grabar / tupla.
@@ -339,7 +339,7 @@
             ul.lista-ul--color
               li(data-aos="zoom-in")
                 i.fas.fa-database 
-                | Permite una buena productividad en el desarrollo de aplicaciones, ya que no es necesario almacenar datos en un formato estructurado.
+                |  Permite una buena productividad en el desarrollo de aplicaciones, ya que no es necesario almacenar datos en un formato estructurado.
               li(data-aos="zoom-in")
                 i.fas.fa-database 
                 |	Es una mejor opción para administrar y manejar grandes conjuntos de datos.
@@ -362,22 +362,22 @@
             ul.lista-ul--color
               li(data-aos="zoom-in")
                 i.fas.fa-database 
-                | Servicios web de Amazon (AWS).
+                |  Servicios web de #[em Amazon] (AWS).
               li(data-aos="zoom-in")
                 i.fas.fa-database 
-                |	Microsoft Azure.
+                |	#[em Microsoft Azure].
               li(data-aos="zoom-in")
                 i.fas.fa-database 
-                |	Kamatera.
+                |	#[em Kamatera].
               li(data-aos="zoom-in")
                 i.fas.fa-database 
-                |	PhonixNAP.
+                |	#[em PhonixNAP].
               li(data-aos="zoom-in")
                 i.fas.fa-database 
-                |	ScienceSoft.
+                |	#[em ScienceSoft].
               li(data-aos="zoom-in")
                 i.fas.fa-database 
-                |	Google Cloud SQL, etc.
+                |	#[em Google Cloud SQL], etc.
 
           .col-md-6
             figure
@@ -415,7 +415,7 @@
         img(src='@/assets/curso/temas/icono.svg' style="max-width: 15px;")
         .h3.col-auto.mb-0.ms-2 Base de datos relacional
 
-    p(data-aos="zoom-in") Esta base de datos se centra en el modelo de datos relacionales, que almacena datos en forma de filas (tupla) y columnas (atributos), y juntos forman una tabla (relación). Una base de datos relacional utiliza SQL para almacenar, manipular y mantener los datos. EF Codd inventó la base de datos en 1970. Cada tabla de la base de datos lleva una clave que hace que los datos sean únicos, los demás ejemplos de bases de datos relacionales son MySQL, Microsoft SQL Server, Oracle, etc.
+    p(data-aos="zoom-in") Esta base de datos se centra en el modelo de datos relacionales, que almacena datos en forma de filas (tupla) y columnas (atributos), y juntos forman una tabla (relación). Una base de datos relacional utiliza SQL para almacenar, manipular y mantener los datos. EF Codd inventó la base de datos en 1970. Cada tabla de la base de datos lleva una clave que hace que los datos sean únicos, los demás ejemplos de bases de datos relacionales son #[em MySQL, Microsoft SQL Server, Oracle], etc.
     
     p(style="color:#6530CE")(data-aos="zoom-in") Propiedades de la base de datos relacional: existen las siguientes cuatro propiedades comúnmente conocidas de un modelo relacional denominadas propiedades ACID, donde:
 
@@ -454,13 +454,12 @@
             |	Bases de datos de gráficos: se utiliza para almacenar grandes cantidades de datos en una estructura similar a un gráfico. Por lo general, los sitios web de redes sociales utilizan la base de datos de gráficos.
           li(data-aos="zoom-in")
             i.fas.fa-database 
-            |	Almacenes de columna ancha: es similar a los datos representados en las bases de datos relacionales. Aquí, los datos se almacenan juntos en columnas grandes, en lugar de almacenarse en filas. Ver figura.
+            |	Almacenes de columna ancha: es similar a los datos representados en las bases de datos relacionales. Aquí, los datos se almacenan juntos en columnas grandes, en lugar de almacenarse en filas. Ver figura 1.
     
     .row.justify-content-center
       .col-10
         .titulo-sexto.color-acento-contenido.mt-5
-          h5 Figura 1: 
-          span Bases de datos SQL y NoSQL
+          p.mb-0 #[b Figura 1.] #[i Bases de datos SQL y NoSQL.]
 
         figure
           img(src='@/assets/curso/temas/tema1/img25.svg')
@@ -529,9 +528,9 @@
 
     Separador
     #t_1_3.titulo-segundo.color-acento-botones(data-aos="fade-left")
-      h2 1.3. Herramientas de software más conocidas para bases de datos
+      h2 1.3 Herramientas de software más conocidas para bases de datos
 
-        A continuación puede ver las herramientas más comunes.
+    p A continuación puede ver las herramientas más comunes.
 
     figure
       img(src='@/assets/curso/temas/tema1/img27.svg')

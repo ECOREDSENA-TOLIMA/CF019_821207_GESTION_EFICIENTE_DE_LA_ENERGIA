@@ -17,7 +17,7 @@
       SlyderA(tipo="b")
         .row.mt-5
           .col-md-6.mb-4.mb-md-0
-            p Los datos son una colección de una pequeña unidad de información distinta. Se puede usar en una variedad de formas como texto, números, medios, bytes, etc., se puede almacenar en hojas de papel o en memoria electrónica, etc. La palabra ‘datos' se origina a partir de la palabra 'datum' que significa 'pieza única de información'. Es plural de la palabra datum. En informática, los datos son información que se puede traducir a una forma para un movimiento y procesamiento eficientes. Los datos son intercambiables.
+            p Los datos son una colección de una pequeña unidad de información distinta. Se puede usar en una variedad de formas como texto, números, medios, bytes, etc., se puede almacenar en hojas de papel o en memoria electrónica, etc. La palabra “datos” se origina a partir de la palabra “#[em datum]” que significa 'pieza única de información'. Es plural de la palabra #[em datum]. En informática, los datos son información que se puede traducir a una forma para un movimiento y procesamiento eficientes. Los datos son intercambiables.
 
           .col-md-6
             figure
@@ -33,7 +33,7 @@
 
         .row
           .col-md-6.mb-4.mb-md-0
-            p En la actualidad, existen muchos sitios web dinámicos en la World Wide Web que se manejan a través de bases de datos, por ejemplo, un modelo que comprueba la disponibilidad de habitaciones en un hotel. Es un ejemplo de un sitio web dinámico que utiliza una base de datos. Hay muchas bases de datos disponibles como MySQL, Sybase, Oracle, MongoDB, Informix, PostgreSQL, SQL Server, etc. Las bases de datos modernas son administradas por el sistema de administración de bases de datos (DBMS).
+            p En la actualidad, existen muchos sitios web dinámicos en la #[em World Wide Web] que se manejan a través de bases de datos, por ejemplo, un modelo que comprueba la disponibilidad de habitaciones en un hotel. Es un ejemplo de un sitio web dinámico que utiliza una base de datos. Hay muchas bases de datos disponibles como #[em MySQL, Sybase, Oracle, MongoDB, Informix, PostgreSQL, SQL Server,] etc. Las bases de datos modernas son administradas por el sistema de administración de bases de datos (DBMS).
 
           .col-md-6
             figure
