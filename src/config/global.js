@@ -36,15 +36,15 @@ export default {
         desarrolloContenidos: true,
         subMenu: [
           {
-            numero: '1.2',
+            numero: '1.1',
             titulo: 'Tipos de bases de datos',
-            hash: 't_1_2',
+            hash: 't_1_1',
           },
           {
-            numero: '1.3',
+            numero: '1.2',
             titulo:
-              'Herramientas de software más conocidas para bases de datos',
-            hash: 't_1_3',
+              'Herramientas de <i>software</i> más conocidas para bases de datos',
+            hash: 't_1_2',
           },
         ],
       },

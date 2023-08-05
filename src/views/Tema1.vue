@@ -2,7 +2,7 @@
 .curso-main-container.pb-3
   BannerInterno
   .container.tarjeta.tarjeta--gris.p-4.p-md-5.mb-5
-    .titulo-principal.color-acento-botones
+    .titulo-principal.color-acento-contenido
       .titulo-principal__numero
         span 1
       h1 Evolución de las bases de datos
@@ -326,8 +326,8 @@
             p.p-4 Un RDBMS es un DBMS tabular que mantiene la seguridad, integridad, precisión y consistencia de los datos.
 
     Separador
-    #t_1_2.titulo-segundo.color-acento-botones(data-aos="fade-left")
-      h2 1.2 Tipos de bases de datos
+    #t_1_1.titulo-segundo.color-acento-botones(data-aos="fade-left")
+      h2 1.1 Tipos de bases de datos
 
     p(data-aos="zoom-in") Hay varios tipos de bases de datos que se utilizan para almacenar diferentes variedades de datos. A través del siguiente recurso se invita a explorar los tipos de bases de datos.
 
@@ -527,8 +527,8 @@
             img(src='@/assets/curso/temas/tema1/img26.svg', alt='')
 
     Separador
-    #t_1_3.titulo-segundo.color-acento-botones(data-aos="fade-left")
-      h2 1.3 Herramientas de software más conocidas para bases de datos
+    #t_1_2.titulo-segundo.color-acento-botones(data-aos="fade-left")
+      h2 1.2 Herramientas de software más conocidas para bases de datos
 
     p A continuación puede ver las herramientas más comunes.
 
