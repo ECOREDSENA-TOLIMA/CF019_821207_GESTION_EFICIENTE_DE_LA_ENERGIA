@@ -212,7 +212,7 @@
         img(src='@/assets/curso/temas/icono.svg' style="max-width: 15px;")
         .h3.col-auto.mb-0.ms-2 DBMS (Sistema de gestión de bases de datos):      
 
-    p(data-aos="zoom-in") El sistema de gestión de bases de datos es un software que se utiliza para almacenar y recuperar la base de datos, por ejemplo, Oracle, MySQL, etc.; estas son algunas herramientas populares de DBMS.
+    p(data-aos="zoom-in") El sistema de gestión de bases de datos es un #[em software] que se utiliza para almacenar y recuperar la base de datos, por ejemplo, Oracle, MySQL, etc.; estas son algunas herramientas populares de DBMS.
 
     .row 
       .col-7
@@ -277,7 +277,7 @@
               | <b>Tamaño</b>: ocupa un gran espacio en disco y una gran memoria para funcionar de manera eficiente.
             li(data-aos="zoom-in")
               i.fas.fa-database 
-              |	<b>Costo</b>: DBMS requiere un procesador de datos de alta velocidad y una memoria más grande para ejecutar el software DBMS, por lo que es costoso.
+              |	<b>Costo</b>: DBMS requiere un procesador de datos de alta velocidad y una memoria más grande para ejecutar el <em>software</em> DBMS, por lo que es costoso.
             li(data-aos="zoom-in")
               i.fas.fa-database 
               |	<b>Complejidad</b>: DBMS crea requisitos y complejidad adicionales.
@@ -528,7 +528,7 @@
 
     Separador
     #t_1_2.titulo-segundo.color-acento-botones(data-aos="fade-left")
-      h2 1.2 Herramientas de software más conocidas para bases de datos
+      h2 1.2 Herramientas de #[em software] más conocidas para bases de datos
 
     p A continuación puede ver las herramientas más comunes.
 

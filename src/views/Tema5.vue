@@ -151,17 +151,17 @@
           .row.align-items-center.justify-content-center
             .col-12
               .titulo-sexto.color-acento-contenido
-                p.mb-0 #[b Figura 4.] #[i Índice agrupado.]
+                p.mb-0 #[b Figura 11.] #[i Índice agrupado.]
             .col-md-8.col-12
               img(src='@/assets/curso/temas/tema5/img6.png', alt='')
 
     .row.align-items-center.justify-content-center
       .col-10
         .caja--blanca--borde.mt-5.p-5
-          p(data-aos="zoom-in") #[b Indexación multinivel]: con el crecimiento del tamaño de la base de datos, los índices también crecen. Como el índice se almacena en la memoria principal, un índice de un solo nivel puede llegar a ser de un tamaño demasiado grande para almacenarlo con múltiples accesos al disco. La indexación multinivel segrega el bloque principal en varios bloques más pequeños para que el mismo pueda almacenarse en un solo bloque. Los bloques externos se dividen en bloques internos que, a su vez, apuntan a los bloques de datos. Esto se puede almacenar fácilmente en la memoria principal con menos gastos generales. Ver figura 4.
+          p(data-aos="zoom-in") #[b Indexación multinivel]: con el crecimiento del tamaño de la base de datos, los índices también crecen. Como el índice se almacena en la memoria principal, un índice de un solo nivel puede llegar a ser de un tamaño demasiado grande para almacenarlo con múltiples accesos al disco. La indexación multinivel segrega el bloque principal en varios bloques más pequeños para que el mismo pueda almacenarse en un solo bloque. Los bloques externos se dividen en bloques internos que, a su vez, apuntan a los bloques de datos. Esto se puede almacenar fácilmente en la memoria principal con menos gastos generales. Ver figura 12.
           .col-12.mt-3
             .titulo-sexto.color-acento-contenido(data-aos="fade-right")
-              p.mb-0 #[b Figura 5.] #[i Índice multinivel.]
+              p.mb-0 #[b Figura 12.] #[i Índice multinivel.]
           .row.align-items-center.justify-content-center
             .col-md-8.col-12
               img(src='@/assets/curso/temas/tema5/img7.png', alt='')
@@ -355,7 +355,7 @@
                 figure
                   img.mx-auto(src='@/assets/curso/temas/tema5/img-43.svg', alt='', style="width:auto")
             h4 Optimice recursos y tiempo
-            p Acelere el lanzamiento al mercado y reduzca el esfuerzo en desarrollo, permitiendo que su empresa se enfoque en las capacidades centrales del producto. Las herramientas de informes de bases de datos son intuitivas y no requieren conocimientos de SQL, lo que facilita la creación rápida de informes sin aprender software complejo. Generar informes de cualquier tipo es sencillo con una interfaz de arrastrar y soltar. 
+            p Acelere el lanzamiento al mercado y reduzca el esfuerzo en desarrollo, permitiendo que su empresa se enfoque en las capacidades centrales del producto. Las herramientas de informes de bases de datos son intuitivas y no requieren conocimientos de SQL, lo que facilita la creación rápida de informes sin aprender #[em software] complejo. Generar informes de cualquier tipo es sencillo con una interfaz de arrastrar y soltar. 
           .tarjeta.tarjeta--azul.p-4(titulo="Visualizaciones de datos avanzadas")
             .row.p-3
               .col-12
@@ -714,7 +714,7 @@
       SlyderA(tipo="b")
         .row.mt-5
           .col-md-7.mb-4.mb-md-0
-            p En el desarrollo de software, el procesamiento y almacenamiento de datos en diferentes estados refleja las reglas comerciales sobre las que se basa una aplicación. El corazón y el alma de cualquier aplicación de software son los datos que se conservan en las bases de datos para su recuperación y procesamiento posterior. El sistema de base de datos (SQL o no SQL) elegido para una aplicación debe satisfacer las necesidades de almacenamiento y procesamiento de datos requeridos por la aplicación.
+            p En el desarrollo de #[em software], el procesamiento y almacenamiento de datos en diferentes estados refleja las reglas comerciales sobre las que se basa una aplicación. El corazón y el alma de cualquier aplicación de #[em software] son los datos que se conservan en las bases de datos para su recuperación y procesamiento posterior. El sistema de base de datos (SQL o no SQL) elegido para una aplicación debe satisfacer las necesidades de almacenamiento y procesamiento de datos requeridos por la aplicación.
 
           .col-md-5
             figure

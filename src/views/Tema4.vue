@@ -92,49 +92,55 @@
 
     .tarjeta.tarjeta--azul.p-4(data-aos="fade-left")
       SlyderA(tipo="b")
-        .row.mt-5
+        .row.mt-2
           p Un tipo de relación representa la asociación entre tipos de entidad, por ejemplo, “inscrito en” es un tipo de relación que existe entre el tipo de entidad estudiante y curso. En el diagrama ER, el tipo de relación está representado por un diamante y conecta las entidades con líneas.
-          
+          .titulo-sexto.color-acento-contenido.mb-1.mx-3
+            p.mb-0 #[b Figura 2.] #[i Asociación entre tipos de entidad.]
           figure
             img(src='@/assets/curso/temas/tema4/img8.png', alt='')
 
-        .row.mt-5
+        .row.mt-2
           p Un conjunto de relaciones del mismo tipo se conoce como conjunto de relaciones. El siguiente conjunto de relaciones muestra que S1 está inscrito en C2, S2 está inscrito en C1 y S3 está inscrito en C3.
-
+          .titulo-sexto.color-acento-contenido.mb-1.mx-3
+            p.mb-0 #[b Figura 3.] #[i Conjunto de relaciones.]
           figure
             img(src='@/assets/curso/temas/tema4/img9.png', alt='')
 
-        .row.mt-5
+        .row.mt-2
           p <b>Grado de un conjunto de relaciones:</b> el número de conjuntos de entidades diferentes que participan en un conjunto de relaciones se denomina grado de un conjunto de relaciones.  
           p <b>Relación unaria:</b> cuando solo hay un conjunto de entidades que participa en una relación, la relación se denomina relación unaria, por ejemplo, una persona está casada con una sola persona.
-
+          .titulo-sexto.color-acento-contenido.mb-1.mx-3
+            p.mb-0 #[b Figura 4.] #[i Grado de un conjunto de relaciones.]
           figure
             img(src='@/assets/curso/temas/tema4/img10.png', alt='')
 
-        .row.mt-5
+        .row.mt-2
           p <b>Relación binaria:</b> cuando hay dos entidades establecidas que participan en una relación, la relación se denomina relación binaria, por ejemplo, el alumno está inscrito en el curso.
-
+          .titulo-sexto.color-acento-contenido.mb-1.mx-3
+            p.mb-0 #[b Figura 5.] #[i Relación binaria.]
           figure
             img(src='@/assets/curso/temas/tema4/img11.png', alt='')
 
-        .row.mt-5
-          p <b>Relación unaria:</b> Cuando hay un conjunto de “n” entidades que participan en una relación, la relación se denomina relación unaria. 
+        .row.mt-2
+          p <b>Relación unaria:</b> cuando hay un conjunto de “n” entidades que participan en una relación, la relación se denomina relación unaria. 
           p <b>Cardinalidad:</b> El número de veces que una entidad de un conjunto de entidades participa en un conjunto de relaciones se conoce como cardinalidad. La cardinalidad puede ser de diferentes tipos:
           p <b>Uno a uno:</b> cuando cada entidad de cada conjunto de entidades puede participar sólo una vez en la relación, la cardinalidad es uno a uno. Supongamos que un hombre puede casarse con una mujer y una mujer puede casarse con un hombre. Entonces la relación será uno a uno.
-
-
+          .titulo-sexto.color-acento-contenido.mb-1.mx-3
+            p.mb-0 #[b Figura 6.] #[i Relación de uno a uno.]
           figure
             img(src='@/assets/curso/temas/tema4/img12.png', alt='')
 
-        .row.mt-5
+        .row.mt-2
           p <b>Muchos a uno:</b> Cuando las entidades de un conjunto de entidades solo pueden participar una vez en el conjunto de relaciones y las entidades de otro conjunto de entidades pueden participar más de una vez en el conjunto de relaciones, la cardinalidad es de muchos a uno. Supongamos que un estudiante solo puede tomar un curso, pero muchos estudiantes pueden tomar un curso. Entonces, la cardinalidad será “n” a 1. Significa que para un curso puede haber “n” estudiantes, pero para un estudiante, solo habrá un curso.
-
+          .titulo-sexto.color-acento-contenido.mb-1.mx-3
+            p.mb-0 #[b Figura 7.] #[i Relación de muchos a uno.]
           figure
             img(src='@/assets/curso/temas/tema4/img13.png', alt='')
 
-        .row.mt-5
+        .row.mt-2
           p <b>De muchos a muchos:</b> cuando las entidades de todos los conjuntos de entidades pueden participar más de una vez en la relación, la cardinalidad es de muchos a muchos. Suponga que un estudiante puede tomar más de un curso y que muchos estudiantes pueden tomar un curso. Entonces, la relación será de muchos a muchos.
-
+          .titulo-sexto.color-acento-contenido.mb-1.mx-3
+            p.mb-0 #[b Figura 8.] #[i Relación de muchos a muchos.]
           figure
             img(src='@/assets/curso/temas/tema4/img14.png', alt='')
 
@@ -164,7 +170,7 @@
     .row.justify-content-center 
       .col-10
         .titulo-sexto.color-acento-contenido.mb-0
-          p.mb-0 #[b Figura 2.] #[i Diagrama conjunto de relaciones.]
+          p.mb-0 #[b Figura 9.] #[i Diagrama conjunto de relaciones.]
         figure
           img(src='@/assets/curso/temas/tema4/img16.png', alt='')
 
@@ -186,7 +192,7 @@
     .row.justify-content-center.mt-5 
       .col-10
         .titulo-sexto.color-acento-contenido.mb-0
-          p.mb-0 #[b Figura 3.] #[i Diagrama relación de identificación.]
+          p.mb-0 #[b Figura 10.] #[i Diagrama relación de identificación.]
         figure
           img(src='@/assets/curso/temas/tema4/img18.png', alt='')
 

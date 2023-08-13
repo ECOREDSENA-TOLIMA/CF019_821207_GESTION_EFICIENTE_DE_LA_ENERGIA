@@ -8,6 +8,8 @@
       p.mb-0 Síntesis: Base de datos
 
     .row.justify-content-center
+      .col-12
+        p El componente formativo bases de datos abarca diversos aspectos clave para su comprensión y aplicación. En primer lugar, se explora la introducción a las bases de datos, incluyendo la evolución y los diferentes tipos existentes, así como las herramientas de #[em software] más conocidas utilizadas en este ámbito. Luego, se analizan las fases del proceso de desarrollo de bases de datos, centrándose en la conceptualización de entidades, relaciones y atributos, y el modelo ER. Se examinan también los procedimientos fundamentales en bases de datos, como los índices, las vistas, los reportes o informes, los permisos y roles de usuario, la optimización y la limpieza de la base de datos, así como las pruebas necesarias. Finalmente, se destaca la importancia de MySQL, una popular herramienta de gestión de bases de datos ampliamente utilizada en la industria.
       .col-12.mb-5
         figure
           img(src="@/assets/curso/temas/sintesis.svg", alt="alt")
