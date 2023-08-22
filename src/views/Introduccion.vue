@@ -7,7 +7,7 @@
       .titulo-principal__numero
         span
           i.fas.fa-info
-      h1 Introducción a las bases de datos
+      h1 Introducción
 
     .row.justify-content-center.align-items-center.py-0.mb-5
       .col-12.col-md-7.cajon.tarjeta--azul.p-3(data-aos="fade-down-right")
