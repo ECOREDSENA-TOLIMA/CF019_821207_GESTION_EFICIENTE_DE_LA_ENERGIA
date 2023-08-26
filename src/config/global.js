@@ -87,37 +87,37 @@ export default {
         subMenu: [
           {
             numero: '5.1',
-            titulo: '5.1. Índice de base de datos',
+            titulo: 'Índice de base de datos',
             hash: 't_5_1',
           },
           {
             numero: '5.2',
-            titulo: '5.2. Vistas en base de datos',
+            titulo: 'Vistas en base de datos',
             hash: 't_5_2',
           },
           {
             numero: '5.3',
-            titulo: '5.3. Reportes o informes en bases de datos',
+            titulo: 'Reportes o informes en bases de datos',
             hash: 't_5_3',
           },
           {
             numero: '5.4',
-            titulo: '5.4. Permisos, roles y control de acceso de usuarios',
+            titulo: 'Permisos, roles y control de acceso de usuarios',
             hash: 't_5_4',
           },
           {
             numero: '5.5',
-            titulo: '5.5. Optimización de bases de datos',
+            titulo: 'Optimización de bases de datos',
             hash: 't_5_5',
           },
           {
             numero: '5.6',
-            titulo: '5.6. Limpieza de la base de datos',
+            titulo: 'Limpieza de la base de datos',
             hash: 't_5_6',
           },
           {
             numero: '5.7',
-            titulo: '5.7. Pruebas en la base de datos',
+            titulo: 'Pruebas en la base de datos',
             hash: 't_5_7',
           },
         ],
@@ -160,7 +160,7 @@ export default {
       {
         icono: 'fas fa-download',
         titulo: 'Descargar PDF',
-        download: 'downloads/CFA_019.pdf',
+        download: 'downloads/CFA_019.zip',
       },
       {
         icono: 'fas fa-download',
